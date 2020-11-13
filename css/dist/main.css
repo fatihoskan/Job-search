@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Roboto", sans-serif;
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  position: relative;
+  background: #E5EAF5;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+
+.card--meetups {
+  position: absolute;
+  left: 463px;
+  top: 247px;
+  width: 373px;
+  height: 320px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.card--meetups span {
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  background: #FFE7EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.card--meetups span img {
+  width: 34px;
+  height: 34px;
+}
+.card--meetups h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card--meetups h6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+.card--meetups a {
+  width: 181px;
+  height: 58px;
+  background: #E75B8D;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card--availability {
+  position: absolute;
+  left: 876px;
+  top: 349px;
+  width: 261px;
+  height: 333px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 40px 40px 50px;
+}
+.card--availability h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.card--availability .checkbox-container {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.card--availability .checkbox-container input {
+  display: none;
+}
+.card--availability .checkbox-container input:checked + .checkbox {
+  background: #fff;
+  transition: 700ms left, 700ms border;
+  background-color: #E65B8D;
+  background-image: url("../assets/icons/check.svg") no-repeat;
+  border: 1px solid #E65B8D;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.card--availability .checkbox-container .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  background: #FFFFFF;
+  border: 1px solid #E65B8D;
+  border-radius: 3px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.card--availability .checkbox-container .checkbox img {
+  width: 16px;
+  height: 16px;
+}
+.card--availability .checkbox-container label {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+  color: #000000;
+}
+.card--availability .checkbox-container:last-child {
+  margin-bottom: 50px;
+}
+.card--availability a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  background: #FFFFFF;
+  border: 2px solid #E65B8D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E65B8D;
+}
+.card--search {
+  position: absolute;
+  width: 494px;
+  height: 79px;
+  left: 545px;
+  top: 118px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+}
+.card--search span {
+  height: 100%;
+  width: 118px;
+  background: #E5EAF5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.card--search input {
+  padding: 0 15px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+  color: #000000;
+}
+.card--search input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
